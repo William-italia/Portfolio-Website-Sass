@@ -9,6 +9,7 @@
   padding: 0.8rem 2rem;
   transition: all 0.5s;
   border: none;
+  border-radius: 0.5rem;
   cursor: pointer; }
 
 .btn-main {
@@ -30,7 +31,7 @@ input[class^='btn-']:hover {
 
 .lead {
   font-size: 1.3rem;
-  margin-bottom: 2rem; }
+  margin: 0.1rem 0rem 2.5rem 0rem; }
 
 .text-center {
   text-align: center; }
