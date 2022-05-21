@@ -1,7 +1,7 @@
 {
   "name": "portfolio-website-sass",
   "version": "1.0.0",
-  "description": "Portfólio website",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
@@ -10,13 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/William-italia/Portfolio-Website-Sass.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/William-italia/Portfolio-Website-Sass/issues"
   },
-  "homepage": "https://github.com/William-italia/Portfolio-Website-Sass#readme",
-  "devDependencies": {
-    "node-sass": "^7.0.1"
-  }
+  "homepage": "https://github.com/William-italia/Portfolio-Website-Sass#readme"
 }
