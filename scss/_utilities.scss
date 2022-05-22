@@ -9,6 +9,7 @@
 %btn-shared {
     display: inline-block;
     padding: .8rem 2rem;
+    font-weight: bold;
     transition: all .5s;
     border: none;
     cursor: pointer;
@@ -43,9 +44,12 @@ input[class^='btn-']:hover {
 
 .lead {
     font-size: 1.3rem;
+    text-align: center;
+    padding: .5rem;
     margin-bottom: 2rem;
 }
 
 .text-center {
     text-align: center;
 }
+

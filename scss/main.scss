@@ -14,6 +14,18 @@ body {
     background: #fff;
 }
 
+body::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: $main-color;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #797878;    /* color of the scroll thumb */
+  }
+
 a {
     text-decoration: none;
     color: $dark-color;
@@ -31,10 +43,15 @@ image {
     width: 100%;
 }
 
+.type-color {
+    color: $main-color;
+}
+
 // logo
 #logo {
     width: 4.5rem;
     height: 4.5rem;
+    border-radius: 30px;
     color: #fff;
     text-transform: uppercase;
 }
@@ -77,15 +94,17 @@ image {
 // header
 #header {
     // header home
+
     &-home {
-        background: $bg-image no-repeat center right / cover ;
         height: 100vh;
+        width: 100%;
         color: #fff;
 
+    
         // header content
         .header-content {
             text-align: center;
-            padding-top: 20%;
+            padding-top: 25%;
         }
 
         h1 {
@@ -100,3 +119,35 @@ image {
     }
 
 }
+.header-mascara {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: $bg-image no-repeat center right / cover ;
+}
+
+.header-mascara::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $dark-color;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.specials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-line {
+    display: inline-block;
+    width: 5%;
+    border-bottom: .2rem solid $main-color;
+}
+
