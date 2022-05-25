@@ -25,7 +25,7 @@ class TypeWriter {
     }
 
     // Insert txt into element
-    this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+    this.txtElement.innerHTML = `<span id="txt">${this.txt}</span>`;
 
     // Initial Type Speed
     let typeSpeed = 300;
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', init);
 
 // Init App
 function init() {
-  const txtElement = document.querySelector('.txt-type');
+  const txtElement = document.querySelector('#txt-type');
   const words = JSON.parse(txtElement.getAttribute('data-words'));
   const wait = txtElement.getAttribute('data-wait');
   // Init TypeWriter
