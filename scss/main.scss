@@ -19,11 +19,11 @@ body::-webkit-scrollbar {
   }
   
   body::-webkit-scrollbar-track {
-    background: $main-color;        /* color of the tracking area */
+    background: #797878;        /* color of the tracking area */
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: #797878;    /* color of the scroll thumb */
+    background-color: $main-color;    /* color of the scroll thumb */
   }
 
 a {
@@ -103,8 +103,10 @@ image {
     
         // header content
         .header-content {
+            display: block;
             text-align: center;
-            padding-top: 25%;
+            align-items: center;
+            padding: 24%;
         }
 
         h1 {
@@ -139,10 +141,73 @@ image {
     z-index: -1;
 }
 
-.specials {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+// home sections
+#home {
+    &-a {
+        .specials {
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+            display: grid;
+            grid-gap: 4rem;
+            grid-template-columns: repeat(2, 1fr);
+
+            .fas {
+                padding-bottom: 0.4rem;
+                color: $main-color;
+                transition: color .5s;
+            }
+            
+            .fas:hover {
+                color: #000;
+            }
+        }
+    }
+    
+    &-b {
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            li {
+                line-height: 2;
+                text-align: center;
+                
+                &.stats-title {
+                    font-size: 1.5rem;
+                    font-weight: 900;
+                }
+
+                &.stats-number {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+            }
+
+            div {
+                padding: 4rem 0;
+                margin: 0 .2rem;
+                border: 5px solid $border;
+
+
+                &:nth-child(1) {
+                    background: #d5c088;
+                    margin-left: .5rem;
+                }
+                
+                &:nth-child(2) {
+                    background: #f8ebc6;
+                }
+                &:nth-child(3) {
+                    background: #d5c088;
+                }
+                
+                &:nth-child(4) {
+                    background: #f8ebc6;
+                    margin-right: .5rem;
+                }
+            }
+        }
+    }
 }
 
 .bottom-line {
