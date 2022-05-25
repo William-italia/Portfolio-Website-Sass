@@ -153,12 +153,12 @@ image {
 
             .fas {
                 padding-bottom: 0.4rem;
-                color: $main-color;
+                color: #000;
                 transition: color .5s;
             }
             
             .fas:hover {
-                color: #000;
+                color: $main-color;
             }
         }
     }
@@ -208,11 +208,39 @@ image {
             }
         }
     }
-}
 
-.bottom-line {
-    display: inline-block;
-    width: 5%;
-    border-bottom: .2rem solid $main-color;
-}
+    &-c {      
+        .process {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1.5rem;
+            text-align: center;
+            
+            &-icon {
+                padding: 50px;
+                border-radius: 50px;
+                background: $dark-color;
+                color: $light-color;
+            }
+          
+        }
+     }
+
+        &-footer {
+            .footer-elements {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: space-around;
+
+                .icons-social {
+                    font-size: 1rem;
+                    padding: .4rem;
+                    margin: 0 .4rem;
+                    border: .1rem solid $light-color;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
 

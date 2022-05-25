@@ -96,6 +96,18 @@ input[class^='btn-']:hover {
   margin: 4rem 0;
 }
 
+.bottom-line {
+  display: block;
+  height: 2px;
+  width: 4rem;
+  background: #ffbc00;
+  margin: 0 auto 1rem auto;
+}
+
+.txt {
+  font-size: 1.1rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -227,11 +239,11 @@ image {
 }
 #home-a .specials .fas {
   padding-bottom: 0.4rem;
-  color: #ffbc00;
+  color: #000;
   transition: color 0.5s;
 }
 #home-a .specials .fas:hover {
-  color: #000;
+  color: #ffbc00;
 }
 
 #home-b .stats {
@@ -270,8 +282,29 @@ image {
   margin-right: 0.5rem;
 }
 
-.bottom-line {
-  display: inline-block;
-  width: 5%;
-  border-bottom: 0.2rem solid #ffbc00;
+#home-c .process {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  text-align: center;
+}
+#home-c .process-icon {
+  padding: 50px;
+  border-radius: 50px;
+  background: #333;
+  color: #f4f4f4;
+}
+
+#home-footer .footer-elements {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+#home-footer .footer-elements .icons-social {
+  font-size: 1rem;
+  padding: 0.4rem;
+  margin: 0 0.4rem;
+  border: 0.1rem solid #f4f4f4;
+  border-radius: 50px;
 }

@@ -101,3 +101,16 @@ input[class^='btn-']:hover {
         margin: 4rem 0;
     }
 }
+
+.bottom-line {
+    display: block;
+    height: 2px;
+    width: 4rem;
+    background: $main-color;
+    margin: 0 auto 1rem auto;
+}
+
+.txt {
+    font-size: 1.1rem;
+}
+
