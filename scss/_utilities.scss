@@ -41,6 +41,10 @@
     &-dark {
         background: $dark-color;
     }
+
+    &-medium {
+        background: rgb(0, 0, 0);
+    }
     
     &-light {
         background: #fff;
@@ -114,6 +118,10 @@ input[class^='btn-']:hover {
     font-size: 4rem;
 }
 .txt {
+    font-size: 1.1rem;
+}
+
+.txt-small {
     font-size: 1.1rem;
 }
 
